@@ -6,12 +6,19 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.ttf2skin.xyz/blog"/>
     <subtitle>泰坦陨落2资源归档站 Blog</subtitle>
-    <icon>https://www.ttf2skin.xyz/img/favicon.ico</icon>
+    <icon>https://www.ttf2skin.xyz/img/favicon.png</icon>
     <entry>
         <title type="html"><![CDATA[R-201卡宾枪 | 浊心斯卡蒂]]></title>
         <id>R-201卡宾枪 | 浊心斯卡蒂</id>
         <link href="https://www.ttf2skin.xyz/blog/2021/05/23/r201_01"/>
         <updated>2021-05-23T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[​	image-20210523133146921]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CAR | 甘雨-钴蓝]]></title>
+        <id>CAR | 甘雨-钴蓝</id>
+        <link href="https://www.ttf2skin.xyz/blog/2021/05/23/car_01"/>
+        <updated>2021-05-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[​]]></summary>
     </entry>
 </feed>
