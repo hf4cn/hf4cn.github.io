@@ -1,1 +1,0 @@
-(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[923],{6353:function(e){"use strict";e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"CAR | \u7518\u96e8-\u94b4\u84dd","permalink":"/blog/2021/05/23/car_01"},{"title":"R-201\u5361\u5bbe\u67aa | \u6d4a\u5fc3\u65af\u5361\u8482","permalink":"/blog/2021/05/23/r201_01"}]}')}}]);

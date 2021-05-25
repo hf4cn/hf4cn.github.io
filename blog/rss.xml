@@ -8,6 +8,13 @@
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
+            <title><![CDATA[CAR | 甘雨-钴蓝]]></title>
+            <link>https://www.ttf2skin.xyz/blog/2021/05/23/car_01</link>
+            <guid>CAR | 甘雨-钴蓝</guid>
+            <pubDate>Sun, 23 May 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[​]]></description>
+        </item>
+        <item>
             <title><![CDATA[R-201卡宾枪 | 浊心斯卡蒂]]></title>
             <link>https://www.ttf2skin.xyz/blog/2021/05/23/r201_01</link>
             <guid>R-201卡宾枪 | 浊心斯卡蒂</guid>
@@ -15,11 +22,11 @@
             <description><![CDATA[​	image-20210523133146921]]></description>
         </item>
         <item>
-            <title><![CDATA[CAR | 甘雨-钴蓝]]></title>
-            <link>https://www.ttf2skin.xyz/blog/2021/05/23/car_01</link>
-            <guid>CAR | 甘雨-钴蓝</guid>
+            <title><![CDATA[R-201卡宾枪 | 浊心斯卡蒂（l2d.ver)]]></title>
+            <link>https://www.ttf2skin.xyz/blog/2021/05/23/r201_02</link>
+            <guid>R-201卡宾枪 | 浊心斯卡蒂（l2d.ver)</guid>
             <pubDate>Sun, 23 May 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[​]]></description>
+            <description><![CDATA[​	image-20210525193353933]]></description>
         </item>
     </channel>
 </rss>
