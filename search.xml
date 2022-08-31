@@ -60,7 +60,7 @@
 <p>当然，在把它打包成皮肤包发布之前，你还应该准备一个<strong>README.txt</strong>文档，用来告知用户使用这个皮肤时有什么需要知道的事情。</p>
 <p>这里提供一个范本，你可以在它的基础上自行修改：</p>
 <p><u>（如果你制作皮肤时使用了他人的素材请一并附上素材的<strong>发布链接</strong>和<strong>感谢条目</strong>）</u></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">该mod为烈焰弹丸的墨冰主题皮肤，由 BotKong 制作并发布。mod在网络上免费发行，如果您通过付费渠道获得了该mod，请联系并告知作者（QQ：xxxxxxxxx）。</span><br><span class="line"></span><br><span class="line">请勿将mod用于商业用途，如需二次发布请先向作者寻求同意。</span><br><span class="line"></span><br><span class="line">感谢 克里罗斯魅子 制作的墨冰程序化材质。</span><br><span class="line"></span><br><span class="line">原视频链接：https://www.bilibili.com/video/BV1oU4y1w7jA?spm_id_from=333.999.0.0&amp;vd_source=89e67cb5f950b02bc3f515e5d1e9b28f</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">该mod为烈焰弹丸的墨冰主题皮肤，由 BotKong 制作并发布。mod在网络上免费发行，如果您通过付费渠道获得了该mod，请联系并告知作者（QQ：xxxxxxxxx）。</span><br><span class="line"></span><br><span class="line">请勿将mod用于商业用途，如需二次发布请先向作者寻求同意。</span><br><span class="line"></span><br><span class="line">感谢 克里罗斯魅子 制作的墨冰程序化材质。</span><br><span class="line"></span><br><span class="line">原视频链接：https://www.bilibili.com/video/BV1oU4y1w7jA</span><br></pre></td></tr></table></figure>
 
 <p>在准备好了data文件和Readme文档之后，这个mod就可以打包准备发布了，我们也就成功来到了这篇教程的结尾。（P.S.记得先自己试试皮肤效果，不要发布一个不能用的皮肤包哦）</p>
 ]]></content>
