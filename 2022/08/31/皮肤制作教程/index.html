@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+  
+
+    <head>
+      <meta charset="utf-8" />
+        
+      <meta name="description" content="1" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>枪火重生皮肤mod制作教程 |  BotKong</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/images/ayer-side.svg" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      
+<link rel="stylesheet" href="/css/fonts/remixicon.css">
+
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js"></script>
+       
+ 
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    </head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-皮肤制作教程"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  枪火重生皮肤mod制作教程
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/08/31/%E7%9A%AE%E8%82%A4%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/" class="article-date">
+  <time datetime="2022-08-30T16:00:00.000Z" itemprop="datePublished">2022-08-31</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">1.9k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">6 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p><img src="https://s1.ax1x.com/2022/08/31/v4ORjf.png"></p>
+<p>欢迎来到这个文档站，由于<del>开黑啦</del>Kook的富文本输入实在是不太好写，这样的长篇教程就还是写在自己的文档站上了。</p>
+<h2 id="在一切开始之前"><a href="#在一切开始之前" class="headerlink" title="在一切开始之前"></a>在一切开始之前</h2><p>显然，在上一篇<strong>安装教程</strong>里提到过的备份这件事无论在什么时候都是一个好习惯，对于想要制作皮肤的你尤甚，在之后的过程中你可能会频繁的跟崩溃和报错打交道，所以好习惯当然是要提前准备好的啦。</p>
+<p>备份完成之后，我们就需要准备一些必要的软件了。</p>
+<p>对于游戏资源文件的解包和修改，我们需要 <strong>AssetsStudio</strong> 和 <strong>AssetBundleExtractor（UABE）</strong> 这两个软件。</p>
+<span id="more"></span>
+
+<p>AssetsStudio ：<a target="_blank" rel="noopener" href="https://github.com/Perfare/AssetStudio">GitHub</a></p>
+<p>AssetBundleExtractor（UABE）：<a target="_blank" rel="noopener" href="https://github.com/SeriousCache/UABE">GitHub</a></p>
+<p>考虑到Github在国内访问不稳定，也提供蓝奏云的备用链接：<a target="_blank" rel="noopener" href="https://wwt.lanzout.com/iZaVz0alnpwh">https://wwt.lanzout.com/iZaVz0alnpwh</a> （不保证软件为最新）</p>
+<p>在此后的皮肤制作阶段，你当然需要准备其他的软件，比如 PhotoShop 或者 Krita 这样的<strong>图像编辑软件</strong>以及 Substance Painter 这样的<strong>模型编辑软件</strong>。当然，它们并不是唯一的，你应该选择最适合自己的软件程序。</p>
+<h2 id="开始解包吧！"><a href="#开始解包吧！" class="headerlink" title="开始解包吧！"></a>开始解包吧！</h2><p>先等等，在你开始解包之前，你应该多少有些一头雾水，/assetbundles目录下包含了近2000个data起始的文件，这些文件到底对应了什么，你显然不会有什么头绪，这样的时候最简单粗暴的方法当然是把这些文件全都解包一遍来确定内容，但是这样实在是浪费时间<del>而且不优雅</del>，我已经为你准备好了所有武器的贴图模型和data文件的对应关系，它们被整理成了一张表格，你只需要按照自己需要的文件进行取用即可。</p>
+<p><img src="https://s1.ax1x.com/2022/08/31/v4T17n.png"></p>
+<p>什么，你说这些内容是怎么来的？<del>当然是我简单粗暴的全都解包了一遍摸出来的。</del></p>
+<p>这份表格是<strong>完全免费</strong>的，它同样被我放在了蓝奏云里：</p>
+<p><a target="_blank" rel="noopener" href="https://wwt.lanzout.com/iYmBB0alnsgj">https://wwt.lanzout.com/iYmBB0alnsgj</a>  密码:6pmq</p>
+<p>这个表格仍旧是未完成版本，但是主要功能已经齐全，游戏版本更新时它也会随之更新。</p>
+<p><strong>举个例子</strong>：我现在想要制作 烈日弹丸 的皮肤，从表格中我可以查到，它对应的data文件分别是 277（模型）和280（贴图）</p>
+<p><img src="https://s1.ax1x.com/2022/08/31/v4TKXQ.png"></p>
+<p>现在我们就可以打开 <strong>AssetsStudio</strong> 了，它的界面应该是这样的：</p>
+<p><img src="https://s1.ax1x.com/2022/08/31/v4Tl0s.png"></p>
+<p>制作皮肤首先需要用到贴图，所以我们在/assetbundles中找到 data280 这个文件，将它拖进AssetsStudio的窗口中，然后选中<strong>Asset List</strong>选项卡。</p>
+<p><img src="https://s1.ax1x.com/2022/08/31/v4Tu6g.png"></p>
+<p>现在应该就能看到data文件的内容了，下一步我们需要将文件进行解包以方便编辑，选中工具栏中的<strong>Export</strong> &gt; <strong>All Assets</strong>然后选择一个你喜欢的文件夹导出其中的文件。</p>
+<p><img src="https://s1.ax1x.com/2022/08/31/v4TGt0.png"></p>
+<p>然后，我们对包含了模型文件的 data277 也进行相同的操作，因为在皮肤制作的过程中我们会常用到武器的3d模型和贴图配合在模型编辑器中进行绘制。完成这些之后，你应该会在导出的文件夹中找到如下的文件：</p>
+<p><img src="https://s1.ax1x.com/2022/08/31/v4T8kq.png"></p>
+<p>其中 <strong>Texture2D</strong> 中即为武器的贴图文件，而 <strong>Mesh</strong> 则包含了模型文件。</p>
+<p>贴图中一般包括以下的文件：</p>
+<p><img src="https://s1.ax1x.com/2022/08/31/v4TJhV.png"></p>
+<p>不同的后缀名分别对应了不同的文件类型，<strong>c代表Color</strong>，即最底层的<strong>色彩纹理贴图</strong>；<strong>n代表Normal</strong>，即<strong>法线视差贴图</strong>；<strong>s代表shininess</strong>，即<strong>光度贴图</strong></p>
+<p>解包步骤到这里也就结束了，在你完成对贴图文件的编辑之后，我们将要对文件进行<strong>打包替换</strong>。</p>
+<h2 id="对Data文件进行修改"><a href="#对Data文件进行修改" class="headerlink" title="对Data文件进行修改"></a>对Data文件进行修改</h2><p>现在我们可以打开<strong>UABE</strong>了，它的页面应该是这样的。</p>
+<p><img src="https://s1.ax1x.com/2022/08/31/v4TtpT.png"></p>
+<p>在工具栏中找到 <strong>File &gt; open</strong> 选中你需要修改的文件，比如我们前面在为烈日弹丸制作皮肤，那么对应的存储贴图的data文件应该是 data280 ，在打开的窗口中进入**/assetbundles**目录找到data280即可。</p>
+<p><img src="https://s1.ax1x.com/2022/08/31/v4T0B9.png"></p>
+<p>然后一般会提醒你需要一个Decompressed-data的目录，选一个自己喜欢的目录即可。然后软件应该会来到数据库选择的窗口，在这里选择<strong>U2018.4.xfx</strong>。</p>
+<p><img src="https://s1.ax1x.com/2022/08/31/v4TaX4.png"></p>
+<p>现在UABE里应该已经出现了你想替换的文件的内容了，点选 <strong>dataxxx（bundle）</strong>，然后末尾以 <strong>（Assets）</strong> 结束的选项：</p>
+<p><img src="https://s1.ax1x.com/2022/08/31/v4TB7R.png"></p>
+<p>终于来到了关键的一步，看到右侧出现的几个熟悉的文件名了吗（如果文件较多找不到你需要的贴图可以点击以下右侧项目栏里的<strong>Type</strong>类型进行排序，然后找到Type类型为Texture2D的即可），现在我们要用之前编辑好的贴图来替换文件内原本的贴图，比如我现在要将准备好的墨冰贴图导入替换原本的贴图，这个贴图属于<strong>Color贴图</strong>也即色彩纹理，所以我们选择这里的weapon_1205_<strong>c</strong>.png。</p>
+<p>现在右侧应该出现了这个文件相关的信息，我们选择<strong>Plugins &gt; Edit</strong>：</p>
+<p><img src="https://s1.ax1x.com/2022/08/31/v4TwnJ.png"></p>
+<p>现在应该会出现一个编辑贴图参数的弹窗：</p>
+<p><img src="https://s1.ax1x.com/2022/08/31/v4TN1U.png"></p>
+<p>这里的其他参数我们会在日后再细讲<del>（因为我也还没折腾明白）</del>，我们先选择下面的<strong>Load</strong>按钮，现在应该会弹出一个弹窗，让你选择需要替换的贴图，我们需要将已经做好的墨冰贴图放进去，所以在这里选择墨冰的<strong>color贴图</strong>。选择完成后点击<strong>OK</strong>即可完成替换步骤，Quality设置直接选择默认即可，然后项目中的Modified应该会被打上*号，表示这个文件被修改过了。</p>
+<p><img src="https://s1.ax1x.com/2022/08/31/v4TrA1.png"></p>
+<p>现在我们可以重复这个操作，将 <strong>_n</strong> 结尾的贴图替换为<strong>法线贴图</strong>，将 <strong>_s</strong> 结尾的贴图替换为<strong>光度贴图</strong>。</p>
+<p>在完成对贴图文件的替换之后，我们就可以导出修改好的data文件了。</p>
+<p>首先再次在左侧选中 <strong>dataxxx（bundle）</strong> 。</p>
+<p><img src="https://s1.ax1x.com/2022/08/31/v4Tstx.png"></p>
+<p>点选 <strong>File &gt;  Apply and save Selection</strong> </p>
+<p><img src="https://s1.ax1x.com/2022/08/31/v4Tyh6.png"></p>
+<p>然后就可以选一个自己喜欢的地方导出修改过的data文件了！</p>
+<p>当然，在把它打包成皮肤包发布之前，你还应该准备一个<strong>README.txt</strong>文档，用来告知用户使用这个皮肤时有什么需要知道的事情。</p>
+<p>这里提供一个范本，你可以在它的基础上自行修改：</p>
+<p><u>（如果你制作皮肤时使用了他人的素材请一并附上素材的<strong>发布链接</strong>和<strong>感谢条目</strong>）</u></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">该mod为烈焰弹丸的墨冰主题皮肤，由 BotKong 制作并发布。mod在网络上免费发行，如果您通过付费渠道获得了该mod，请联系并告知作者（QQ：xxxxxxxxx）。</span><br><span class="line"></span><br><span class="line">请勿将mod用于商业用途，如需二次发布请先向作者寻求同意。</span><br><span class="line"></span><br><span class="line">感谢 克里罗斯魅子 制作的墨冰程序化材质。</span><br><span class="line"></span><br><span class="line">原视频链接：https://www.bilibili.com/video/BV1oU4y1w7jA?spm_id_from=333.999.0.0&amp;vd_source=89e67cb5f950b02bc3f515e5d1e9b28f</span><br></pre></td></tr></table></figure>
+
+<p>在准备好了data文件和Readme文档之后，这个mod就可以打包准备发布了，我们也就成功来到了这篇教程的结尾。（P.S.记得先自己试试皮肤效果，不要发布一个不能用的皮肤包哦）</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://hf4cn.github.com/2022/08/31/%E7%9A%AE%E8%82%A4%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
+  </div>
+
+   
+  
+   
+    
+    <script src="https://cdn.staticfile.org/twikoo/1.4.18/twikoo.all.min.js"></script>
+    <div id="twikoo" class="twikoo"></div>
+    <script>
+        twikoo.init({
+            envId: ""
+        })
+    </script>
+ 
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2022
+        <i class="ri-heart-fill heart_icon"></i> BotKong
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      
+        <li>
+          <a href="https://beian.miit.gov.cn/" target="_black" rel="nofollow">浙ICP备11451419</a>
+        </li>
+        
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+      </li>
+    </ul>
+  </div>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/ayer-side.svg" alt="BotKong"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">关于</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="/images/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.staticfile.org/clipboard.js/2.0.10/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+ 
+<script src="/js/dz.js"></script>
+ 
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="86"
+        src="//music.163.com/outchain/player?type=2&id=1863541743&auto=1&height=66"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+    
+
+  </div>
+</body>
+
+</html>
